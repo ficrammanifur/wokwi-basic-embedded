@@ -520,9 +520,15 @@ Kontribusi sangat diterima! Silakan:
 
 ## 📄 License
 
-[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
+<p align="center">
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="MIT License">
+  </a>
+</p>
 
-MIT License - Copyright (c) 2025 Ficram Manifur
+<p align="center">
+  <a href="LICENSE">MIT License</a> — Copyright © 2025 Ficram Manifur
+</p>
 
 ---
 
