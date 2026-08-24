@@ -487,22 +487,22 @@ Setiap materi akan dilengkapi dengan:
 - [x] Source code
 - [x] Circuit diagram
 - [x] Penjelasan konsep
-- [ ] Wokwi simulation
-- [ ] Example output
-- [ ] Notes / learning points
+- [x] Wokwi simulation
+- [x] Example output
+- [x] Notes / learning points
 
 ### Progress Tracker
 
 | Modul | Status | Progress |
 |-------|--------|----------|
 | 01 Fundamental | ✅ Complete | 100% |
-| 02 Communication | 🚧 In Progress | 60% |
-| 03 Multitasking | 📝 Planned | 0% |
-| 04 Synchronization | 📝 Planned | 0% |
-| 05 System Management | 📝 Planned | 0% |
-| 06 Program Architecture | 📝 Planned | 0% |
-| 07 Optimization | 📝 Planned | 0% |
-| 08 System Integration | 📝 Planned | 0% |
+| 02 Communication | ✅ Complete | 100% |
+| 03 Multitasking | ✅ Complete | 100% |
+| 04 Synchronization | ✅ Complete | 100% |
+| 05 System Management | ✅ Complete | 100% |
+| 06 Program Architecture | ✅ Complete | 100% |
+| 07 Optimization | ✅ Complete | 100% |
+| 08 System Integration | ✅ Complete | 100% |
 
 ---
 
