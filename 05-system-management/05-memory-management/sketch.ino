@@ -9,69 +9,61 @@
  * Pinout:
  * - Tidak ada pin
  */
-
 #include <esp_heap_caps.h>
 
 void setup() {
   Serial.begin(115200);
-  
+  delay(1000); // beri waktu Serial siap
+
   Serial.println("Memory Management Demo Started");
-  
-  // Get heap information
+
   printMemoryInfo();
-  
-  // Allocate memory example
   allocateMemory();
-  
-  // Show fragmentation
   printFragmentation();
 }
 
 void loop() {
-  // Monitor memory usage
   static unsigned long lastPrint = 0;
-  
+
   if (millis() - lastPrint > 5000) {
     lastPrint = millis();
     printMemoryInfo();
+    printFragmentation();
   }
-  
+
   delay(1000);
 }
 
 void printMemoryInfo() {
   Serial.println("\n=== Memory Information ===");
-  
-  // Total heap
+
   size_t totalHeap = ESP.getHeapSize();
+  size_t freeHeap = ESP.getFreeHeap();
+  size_t minFreeHeap = ESP.getMinFreeHeap();
+  size_t usedHeap = totalHeap - freeHeap;
+
   Serial.print("Total Heap: ");
   Serial.print(totalHeap / 1024);
   Serial.println(" KB");
-  
-  // Free heap
-  size_t freeHeap = ESP.getFreeHeap();
+
   Serial.print("Free Heap: ");
   Serial.print(freeHeap / 1024);
   Serial.println(" KB");
-  
-  // Minimum free heap
-  size_t minFreeHeap = ESP.getMinFreeHeap();
+
   Serial.print("Min Free Heap: ");
   Serial.print(minFreeHeap / 1024);
   Serial.println(" KB");
-  
-  // Heap used by all tasks
-  size_t usedHeap = totalHeap - freeHeap;
+
   Serial.print("Used Heap: ");
   Serial.print(usedHeap / 1024);
   Serial.println(" KB");
-  
-  // Free heap percentage
-  Serial.print("Heap Usage: ");
-  Serial.print((usedHeap * 100) / totalHeap);
-  Serial.println("%");
-  
-  // PSRAM (if available)
+
+  if (totalHeap > 0) {
+    Serial.print("Heap Usage: ");
+    Serial.print((usedHeap * 100) / totalHeap);
+    Serial.println("%");
+  }
+
   if (psramFound()) {
     size_t totalPSRAM = ESP.getPsramSize();
     size_t freePSRAM = ESP.getFreePsram();
@@ -86,17 +78,12 @@ void printMemoryInfo() {
 
 void allocateMemory() {
   Serial.println("\n=== Memory Allocation Example ===");
-  
-  // Allocate 1KB
+
   void* ptr = malloc(1024);
-  
+
   if (ptr != NULL) {
     Serial.println("Allocated 1KB successfully");
-    
-    // Fill with data
     memset(ptr, 0, 1024);
-    
-    // Free memory
     free(ptr);
     Serial.println("Memory freed");
   } else {
@@ -105,21 +92,34 @@ void allocateMemory() {
 }
 
 void printFragmentation() {
-  heap_caps_get_info(NULL, MALLOC_CAP_8BIT);
-  
-  // Get largest free block
+  // FIX: siapkan struct untuk menampung hasil, jangan kirim NULL
+  multi_heap_info_t info;
+  heap_caps_get_info(&info, MALLOC_CAP_8BIT);
+
   size_t largestFreeBlock = heap_caps_get_largest_free_block(MALLOC_CAP_8BIT);
   size_t totalFree = heap_caps_get_free_size(MALLOC_CAP_8BIT);
-  
+
   Serial.println("\n=== Memory Fragmentation ===");
   Serial.print("Largest Free Block: ");
   Serial.print(largestFreeBlock / 1024);
   Serial.println(" KB");
-  
+
+  Serial.print("Total Free (8BIT cap): ");
+  Serial.print(totalFree / 1024);
+  Serial.println(" KB");
+
+  Serial.print("Allocated blocks: ");
+  Serial.println(info.allocated_blocks);
+
+  Serial.print("Free blocks: ");
+  Serial.println(info.free_blocks);
+
   if (totalFree > 0) {
-    int fragmentation = (1 - (float)largestFreeBlock / totalFree) * 100;
+    int fragmentation = (int)((1.0f - (float)largestFreeBlock / (float)totalFree) * 100);
     Serial.print("Fragmentation: ");
     Serial.print(fragmentation);
     Serial.println("%");
+  } else {
+    Serial.println("Fragmentation: N/A (totalFree = 0)");
   }
 }
