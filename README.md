@@ -140,11 +140,11 @@ Mempelajari bagaimana task saling berkomunikasi dan bagaimana resource bersama d
 
 | No | Materi            | Pembahasan                     |   Wokwi   |
 | -: | ----------------- | ------------------------------ | :-------: |
-| 01 | Queue             | Mengirim data antar-task       | [▶️ Open] |
-| 02 | Semaphore         | Sinkronisasi antar-task        | [▶️ Open] |
-| 03 | Mutex             | Mengamankan shared resource    | [▶️ Open] |
-| 04 | Event Group       | Sinkronisasi berdasarkan event | [▶️ Open] |
-| 05 | Task Notification | Komunikasi ringan antar-task   | [▶️ Open] |
+| 01 | Queue             | Mengirim data antar-task       | [▶️ Open](https://wokwi.com/projects/473261240357564417) |
+| 02 | Semaphore         | Sinkronisasi antar-task        | [▶️ Open](https://wokwi.com/projects/473261362491528193) |
+| 03 | Mutex             | Mengamankan shared resource    | [▶️ Open](https://wokwi.com/projects/473261560705986561) |
+| 04 | Event Group       | Sinkronisasi berdasarkan event | [▶️ Open](https://wokwi.com/projects/473261663339578369) |
+| 05 | Task Notification | Komunikasi ringan antar-task   | [▶️ Open](https://wokwi.com/projects/473261809130462209) |
 
 ---
 
@@ -154,12 +154,12 @@ Konsep untuk membuat sistem ESP32 lebih stabil, aman, hemat daya, dan mudah dipe
 
 | No | Materi            | Pembahasan                       |   Wokwi   |
 | -: | ----------------- | -------------------------------- | :-------: |
-| 01 | Watchdog Timer    | Mendeteksi task/system yang hang | [▶️ Open] |
-| 02 | Deep Sleep        | Menghemat konsumsi daya          | [▶️ Open] |
-| 03 | NVS / Preferences | Menyimpan konfigurasi            | [▶️ Open] |
-| 04 | OTA               | Update firmware melalui jaringan | [▶️ Open] |
-| 05 | Memory Management | Pengelolaan RAM dan heap         | [▶️ Open] |
-| 06 | Stack Monitoring  | Memantau penggunaan stack        | [▶️ Open] |
+| 01 | Watchdog Timer    | Mendeteksi task/system yang hang | [▶️ Open](https://wokwi.com/projects/473261962517235713) |
+| 02 | Deep Sleep        | Menghemat konsumsi daya          | [▶️ Open](https://wokwi.com/projects/473262122340168705) |
+| 03 | NVS / Preferences | Menyimpan konfigurasi            | [▶️ Open](https://wokwi.com/projects/473262390742115329) |
+| 04 | OTA               | Update firmware melalui jaringan | [▶️ Open](https://wokwi.com/projects/473263193942066177) |
+| 05 | Memory Management | Pengelolaan RAM dan heap         | [▶️ Open](https://wokwi.com/projects/473263653325406209) |
+| 06 | Stack Monitoring  | Memantau penggunaan stack        | [▶️ Open](https://wokwi.com/projects/473263990688039937) |
 
 ---
 
