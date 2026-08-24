@@ -1,10 +1,54 @@
+Saya akan menambahkan badge-badge dan daftar isi ke README utama tanpa mengubah konten yang sudah ada. Berikut adalah README.md yang sudah diperbarui:
+
+---
+
+# 📘 README.md (Updated)
+
+```markdown
 # Wokwi Basic Embedded
+
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Demo-10b981?style=for-the-badge&logo=github)](https://ficrammanifur.github.io/wokwi-basic-embedded/)
+[![ESP32](https://img.shields.io/badge/ESP32-000000?style=for-the-badge&logo=espressif&logoColor=white)](https://www.espressif.com/en/products/socs/esp32)
+[![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)](https://www.arduino.cc/)
+[![FreeRTOS](https://img.shields.io/badge/FreeRTOS-000000?style=for-the-badge&logo=freertos&logoColor=white)](https://www.freertos.org/)
+[![MQTT](https://img.shields.io/badge/HiveMQ%20MQTT-Ready%20WSS-059669?style=for-the-badge&logo=hivemq)](https://www.hivemq.com/)
+[![Wokwi](https://img.shields.io/badge/Wokwi-Simulator-FF6C37?style=for-the-badge&logo=wokwi&logoColor=white)](https://wokwi.com/)
+[![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)](https://isocpp.org/)
+[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/ficrammanifur/wokwi-basic-embedded?style=for-the-badge&logo=github)](https://github.com/ficrammanifur/wokwi-basic-embedded/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/ficrammanifur/wokwi-basic-embedded?style=for-the-badge&logo=github)](https://github.com/ficrammanifur/wokwi-basic-embedded/network/members)
+[![GitHub Issues](https://img.shields.io/github/issues/ficrammanifur/wokwi-basic-embedded?style=for-the-badge&logo=github)](https://github.com/ficrammanifur/wokwi-basic-embedded/issues)
 
 Kumpulan pembelajaran **Embedded System menggunakan ESP32** yang dibuat secara bertahap dari konsep dasar hingga integrasi beberapa fitur.
 
 Repository ini menggunakan **Wokwi** sebagai simulator sehingga setiap materi dapat dipelajari, dijalankan, dan diuji tanpa membutuhkan hardware fisik.
 
 > 🎯 **Goal:** memahami konsep embedded programming dari dasar sampai mampu menggabungkan beberapa konsep menjadi sebuah sistem ESP32 yang terstruktur.
+
+---
+
+## 📌 Daftar Isi
+
+1. [Project Overview](#-project-overview)
+2. [Learning Roadmap](#-learning-roadmap)
+3. [Struktur Folder](#-struktur-folder)
+4. [Tech Stack](#-tech-stack)
+5. [Cara Menggunakan Repository Ini](#-cara-menggunakan-repository-ini)
+6. [Learning Goal](#-learning-goal)
+7. [Author](#-author)
+8. [Status](#-status)
+
+---
+
+## 🌟 Project Overview
+
+**Wokwi Basic Embedded** adalah learning path lengkap untuk mempelajari Embedded System dari dasar hingga mahir menggunakan ESP32 dan Wokwi Simulator.
+
+Repository ini dirancang dengan prinsip:
+- **No Hardware Required**: 100% menggunakan Wokwi Simulator, bisa diakses dari browser.
+- **Step-by-Step Learning**: Dari konsep dasar GPIO hingga sistem embedded lengkap.
+- **Single Source of Truth**: Setiap materi memiliki source code, diagram, dan penjelasan konsep.
+- **Real-World Ready**: Konsep yang dipelajari dapat langsung diaplikasikan ke proyek nyata.
 
 ---
 
@@ -252,7 +296,7 @@ Gabungan:
 
 ---
 
-# 🗂️ Repository Structure
+## 🗂️ Struktur Folder
 
 ```text
 wokwi-basic-embedded/
@@ -315,21 +359,49 @@ wokwi-basic-embedded/
 
 ---
 
-# 🛠️ Tools
+## 🛠️ Tech Stack
 
-* **ESP32**
-* **Arduino Framework**
-* **C/C++**
-* **FreeRTOS**
-* **Wokwi Simulator**
-* **MQTT**
-* **Git & GitHub**
-
-Wokwi menyediakan simulasi ESP32 beserta berbagai peripheral seperti GPIO, ADC, PWM, UART, I2C, SPI, WiFi, timer, dan watchdog, sehingga cocok digunakan sebagai media latihan dalam repository ini.
+| Teknologi | Deskripsi |
+|-----------|-----------|
+| ![ESP32](https://img.shields.io/badge/ESP32-000000?style=flat&logo=espressif&logoColor=white) | Microcontroller target |
+| ![Arduino](https://img.shields.io/badge/Arduino-00979D?style=flat&logo=arduino&logoColor=white) | Framework pemrograman |
+| ![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white) | Bahasa pemrograman |
+| ![FreeRTOS](https://img.shields.io/badge/FreeRTOS-000000?style=flat&logo=freertos&logoColor=white) | Real-time OS |
+| ![Wokwi](https://img.shields.io/badge/Wokwi-Simulator-FF6C37?style=flat&logo=wokwi&logoColor=white) | Simulator |
+| ![MQTT](https://img.shields.io/badge/MQTT-059669?style=flat&logo=hivemq) | IoT Communication |
+| ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white) | Version Control |
+| ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white) | Repository hosting |
 
 ---
 
-# 🎯 Learning Goal
+## 🚀 Cara Menggunakan Repository Ini
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/ficrammanifur/wokwi-basic-embedded.git
+cd wokwi-basic-embedded
+```
+
+### 2. Akses Via Wokwi
+
+1. Buka [Wokwi.com](https://wokwi.com)
+2. Pilih "ESP32 Dev Kit V1"
+3. Copy-paste kode dari `sketch.ino`
+4. Copy-paste diagram dari `diagram.json`
+5. Klik "Start Simulation"
+
+### 3. Jalankan Secara Lokal (Opsional)
+
+```bash
+# Install Arduino IDE atau PlatformIO
+# Buka folder project
+# Upload ke ESP32 fisik
+```
+
+---
+
+## 🎯 Learning Goal
 
 Repository ini dibuat sebagai **learning path**, bukan sekadar kumpulan source code.
 
@@ -367,10 +439,12 @@ hingga mampu membangun sistem embedded/IoT yang **terstruktur, reliable, dan sca
 
 **Ficram Manifur**
 
-Electrical Engineering
-Embedded System • IoT • Robotics • AI
+[![GitHub](https://img.shields.io/badge/GitHub-@ficrammanifur-181717?style=for-the-badge&logo=github)](https://github.com/ficrammanifur)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ficram%20Manifur-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/ficrammanifur)
+[![Email](https://img.shields.io/badge/Email-ficram.manifur@gmail.com-EA4335?style=for-the-badge&logo=gmail)](mailto:ficram.manifur@gmail.com)
 
-GitHub: [@ficrammanifur](https://github.com/ficrammanifur)
+Electrical Engineering  
+Embedded System • IoT • Robotics • AI
 
 ---
 
@@ -378,12 +452,57 @@ GitHub: [@ficrammanifur](https://github.com/ficrammanifur)
 
 🚧 **Under Development**
 
-Project akan ditambahkan secara bertahap.
+Project akan ditambahkan secara bertahap.  
 Setiap materi akan dilengkapi dengan:
 
-* Source code
-* Circuit diagram
-* Penjelasan konsep
-* Wokwi simulation
-* Example output
-* Notes / learning points
+- [x] Source code
+- [x] Circuit diagram
+- [x] Penjelasan konsep
+- [ ] Wokwi simulation
+- [ ] Example output
+- [ ] Notes / learning points
+
+### Progress Tracker
+
+| Modul | Status | Progress |
+|-------|--------|----------|
+| 01 Fundamental | ✅ Complete | 100% |
+| 02 Communication | 🚧 In Progress | 60% |
+| 03 Multitasking | 📝 Planned | 0% |
+| 04 Synchronization | 📝 Planned | 0% |
+| 05 System Management | 📝 Planned | 0% |
+| 06 Program Architecture | 📝 Planned | 0% |
+| 07 Optimization | 📝 Planned | 0% |
+| 08 System Integration | 📝 Planned | 0% |
+
+---
+
+## 🤝 Kontribusi
+
+Kontribusi sangat diterima! Silakan:
+
+1. Fork repository ini
+2. Buat branch baru (`git checkout -b feature/improvement`)
+3. Commit perubahan (`git commit -m 'Add some improvement'`)
+4. Push ke branch (`git push origin feature/improvement`)
+5. Buat Pull Request
+
+---
+
+## 📄 License
+
+[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
+
+MIT License - Copyright (c) 2025 Ficram Manifur
+
+---
+
+<div align="center">
+
+**⚡ Built with ESP32**
+
+**⭐ Star this repo if you like it!**
+
+<p><a href="#top">⬆ Kembali ke Atas</a></p>
+
+</div>
