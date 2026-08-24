@@ -4,7 +4,7 @@
  * Konsep: Menggabungkan semua konsep menjadi satu sistem
  * 
  * Komponen:
- * - Potentiometer (GPIO 36) - ADC
+ * - Potentiometer (GPIO 35) - ADC
  * - Button (GPIO 4) - Interrupt
  * - LED1 (GPIO 2) - PWM
  * - LED2 (GPIO 5) - Output
@@ -16,7 +16,7 @@
  * - State Machine, Watchdog
  * 
  * Pinout:
- * - Sensor  -> GPIO 36 (ADC)
+ * - Sensor  -> GPIO 35 (ADC)
  * - Button  -> GPIO 4 (Interrupt)
  * - LED1    -> GPIO 2 (PWM)
  * - LED2    -> GPIO 5
@@ -37,10 +37,15 @@ const char* mqtt_server = "broker.mqttdashboard.com";
 const int mqtt_port = 1883;
 
 // ===== PIN DEFINITIONS =====
-const int SENSOR_PIN = 36;
+const int SENSOR_PIN = 35;
 const int BUTTON_PIN = 4;
 const int LED1_PIN = 2;  // PWM
 const int LED2_PIN = 5;
+
+// ===== PWM CONFIGURATION =====
+const int PWM_CHANNEL = 0;
+const int PWM_FREQ = 5000;
+const int PWM_RESOLUTION = 8;
 
 // ===== SYSTEM COMPONENTS =====
 // State Machine
@@ -101,9 +106,12 @@ void setup() {
   analogReadResolution(12);
   analogSetAttenuation(ADC_11db);
   
-  // PWM configuration for LED1
-  ledcSetup(0, 5000, 8);
-  ledcAttachPin(LED1_PIN, 0);
+  // ===== PWM CONFIGURATION (FIXED for ESP32 Core 3.0+) =====
+  // Cara baru: ledcAttach(pin, freq, resolution)
+  ledcAttach(LED1_PIN, PWM_FREQ, PWM_RESOLUTION);
+  
+  // Set initial duty cycle to 0
+  ledcWrite(LED1_PIN, 0);
   
   // Attach interrupt
   attachInterrupt(digitalPinToInterrupt(BUTTON_PIN), buttonISR, FALLING);
@@ -120,7 +128,13 @@ void setup() {
 
 // ===== WATCHDOG =====
 void initWatchdog() {
-  esp_task_wdt_init(10, true);
+  // New ESP32 watchdog API requires config struct
+  esp_task_wdt_config_t wdt_config = {
+    .timeout_ms = 10000,      // 10 seconds
+    .idle_core_mask = 0,      // Don't watch idle tasks
+    .trigger_panic = true     // Panic on timeout
+  };
+  esp_task_wdt_init(&wdt_config);
   esp_task_wdt_add(NULL);
   Serial.println("Watchdog initialized");
 }
@@ -170,13 +184,13 @@ void mqttCallback(char* topic, byte* payload, unsigned int length) {
   // Process command
   if (String(topic) == "esp32/command") {
     if (message == "ON") {
-      ledcWrite(0, 255);
+      ledcWrite(LED1_PIN, 255);
     } else if (message == "OFF") {
-      ledcWrite(0, 0);
+      ledcWrite(LED1_PIN, 0);
     } else if (message == "TOGGLE") {
       static bool state = false;
       state = !state;
-      ledcWrite(0, state ? 255 : 0);
+      ledcWrite(LED1_PIN, state ? 255 : 0);
     }
   }
 }
@@ -305,7 +319,7 @@ void controlTask(void* parameter) {
       if (currentState == STATE_RUNNING) {
         // PWM control based on sensor
         int pwmValue = map(data.value, 0, 4095, 0, 255);
-        ledcWrite(0, pwmValue);
+        ledcWrite(LED1_PIN, pwmValue);
         
         // LED2 indication
         if (data.percentage > 70) {
@@ -370,7 +384,7 @@ void updateStateMachine(const SensorData& data) {
 void onStateChange() {
   switch (currentState) {
     case STATE_IDLE:
-      ledcWrite(0, 0);
+      ledcWrite(LED1_PIN, 0);
       Serial.println("System IDLE");
       break;
     case STATE_RUNNING:
