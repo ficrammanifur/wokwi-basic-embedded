@@ -15,6 +15,10 @@
 #include "TimerModule.h"
 #include "LoggerModule.h"
 
+// ===== DEFINISI KONSTANTA =====
+const int LED_PIN = 2;  // ← INI YANG DITAMBAHKAN!
+
+// ===== SETUP =====
 void setup() {
   // Initialize modules
   LoggerModule::init();
@@ -27,12 +31,13 @@ void setup() {
   TimerModule::setInterval(1000, onTimer);
 }
 
+// ===== LOOP =====
 void loop() {
   // Update timer module
   TimerModule::update();
 }
 
-// Timer callback
+// ===== TIMER CALLBACK =====
 void onTimer() {
   static bool state = false;
   state = !state;
