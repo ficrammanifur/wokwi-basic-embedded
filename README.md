@@ -434,7 +434,7 @@ hingga mampu membangun sistem embedded/IoT yang **terstruktur, reliable, dan sca
 
 [![GitHub](https://img.shields.io/badge/GitHub-@ficrammanifur-181717?style=for-the-badge&logo=github)](https://github.com/ficrammanifur)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Ficram%20Manifur-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/ficrammanifur)
-[![Email](https://img.shields.io/badge/Email-ficram.manifur@gmail.com-EA4335?style=for-the-badge&logo=gmail)](mailto:ficram.manifur@gmail.com)
+[![Email](https://img.shields.io/badge/Email-ficramm@gmail.com-EA4335?style=for-the-badge&logo=gmail)](mailto:ficramm@gmail.com)
 
 Electrical Engineering  
 Embedded System • IoT • Robotics • AI
