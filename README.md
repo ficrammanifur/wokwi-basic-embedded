@@ -67,7 +67,7 @@ Repository ini dirancang dengan prinsip:
 
 ---
 
-# 01 — Fundamental
+# [01 — Fundamental](https://github.com/ficrammanifur/wokwi-basic-embedded/tree/main/01-fundamental)
 
 Konsep dasar yang menjadi fondasi pemrograman ESP32.
 
@@ -82,7 +82,7 @@ Konsep dasar yang menjadi fondasi pemrograman ESP32.
 
 ---
 
-# 02 — Communication
+# [02 Communication](https://github.com/ficrammanifur/wokwi-basic-embedded/tree/main/02-communication)
 
 Mempelajari cara ESP32 berkomunikasi dengan perangkat lain maupun jaringan.
 
@@ -96,7 +96,7 @@ Mempelajari cara ESP32 berkomunikasi dengan perangkat lain maupun jaringan.
 
 ---
 
-# 03 — Multitasking
+# [03 Multitasking](https://github.com/ficrammanifur/wokwi-basic-embedded/tree/main/03-multitasking)
 
 Mempelajari bagaimana ESP32 menjalankan beberapa proses menggunakan FreeRTOS.
 
@@ -110,7 +110,7 @@ Mempelajari bagaimana ESP32 menjalankan beberapa proses menggunakan FreeRTOS.
 
 ---
 
-# 04 — Task Communication & Synchronization
+# [04 Task Communication & Synchronization](https://github.com/ficrammanifur/wokwi-basic-embedded/tree/main/04-synchronization)
 
 Mempelajari bagaimana task saling berkomunikasi dan bagaimana resource bersama dikendalikan.
 
@@ -124,7 +124,7 @@ Mempelajari bagaimana task saling berkomunikasi dan bagaimana resource bersama d
 
 ---
 
-# 05 — System Management & Reliability
+# [05 System Management & Reliability](https://github.com/ficrammanifur/wokwi-basic-embedded/tree/main/05-system-management)
 
 Konsep untuk membuat sistem ESP32 lebih stabil, aman, hemat daya, dan mudah dipelihara.
 
@@ -139,7 +139,7 @@ Konsep untuk membuat sistem ESP32 lebih stabil, aman, hemat daya, dan mudah dipe
 
 ---
 
-# 06 — Program Architecture
+# [06 Program Architecture](https://github.com/ficrammanifur/wokwi-basic-embedded/tree/main/06-program-architecture)
 
 Mempelajari cara membuat program embedded yang lebih terstruktur dan mudah dikembangkan.
 
@@ -153,7 +153,7 @@ Mempelajari cara membuat program embedded yang lebih terstruktur dan mudah dikem
 
 ---
 
-# 07 — Optimization
+# [07 Optimization](https://github.com/ficrammanifur/wokwi-basic-embedded/tree/main/07-optimization)
 
 Mempelajari bagaimana meningkatkan performa dan efisiensi sistem.
 
@@ -167,7 +167,7 @@ Mempelajari bagaimana meningkatkan performa dan efisiensi sistem.
 
 ---
 
-# 08 — System Integration
+# [08 System Integration](https://github.com/ficrammanifur/wokwi-basic-embedded/tree/main/08-integration)
 
 Bagian ini mulai menggabungkan beberapa konsep menjadi satu sistem.
 
