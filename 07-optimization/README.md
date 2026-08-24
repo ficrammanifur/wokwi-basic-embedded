@@ -218,3 +218,10 @@ Free Heap: 310 KB (after optimization)
 - [ ] Saya bisa memonitor heap usage
 - [ ] Saya bisa memonitor stack usage
 - [ ] Saya bisa mengoptimalkan memory
+
+---
+
+## 🔗 Navigasi
+
+- [⬅ Kembali ke Home](../README.md)
+- [➡ Lanjut ke Integration](../08-integration/README.md)
