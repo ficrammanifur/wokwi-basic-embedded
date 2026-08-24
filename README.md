@@ -126,11 +126,11 @@ Mempelajari bagaimana ESP32 menjalankan beberapa proses menggunakan FreeRTOS.
 
 | No | Materi          | Pembahasan                            |   Wokwi   |
 | -: | --------------- | ------------------------------------- | :-------: |
-| 01 | FreeRTOS Task   | Membuat task                          | [▶️ Open] |
-| 02 | Task Scheduling | Mengatur eksekusi task                | [▶️ Open] |
-| 03 | Task Priority   | Menentukan prioritas task             | [▶️ Open] |
-| 04 | Dual Core       | Menjalankan task pada Core 0 & Core 1 | [▶️ Open] |
-| 05 | Task Affinity   | Menentukan core untuk task            | [▶️ Open] |
+| 01 | FreeRTOS Task   | Membuat task                          | [▶️ Open](https://wokwi.com/projects/473260380649870337) |
+| 02 | Task Scheduling | Mengatur eksekusi task                | [▶️ Open](https://wokwi.com/projects/473260629274617857) |
+| 03 | Task Priority   | Menentukan prioritas task             | [▶️ Open](https://wokwi.com/projects/473260954151834625) |
+| 04 | Dual Core       | Menjalankan task pada Core 0 & Core 1 | [▶️ Open](https://wokwi.com/projects/473261039534247937) |
+| 05 | Task Affinity   | Menentukan core untuk task            | [▶️ Open](https://wokwi.com/projects/473261137869732865) |
 
 ---
 
