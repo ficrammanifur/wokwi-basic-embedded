@@ -51,6 +51,7 @@ public:
   }
 };
 
+// Static member definitions
 bool LoggerModule::enabled = true;
 int LoggerModule::logLevel = 1;
 
