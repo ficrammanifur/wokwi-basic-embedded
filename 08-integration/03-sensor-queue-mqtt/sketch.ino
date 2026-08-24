@@ -4,11 +4,11 @@
  * Konsep: Membaca sensor, kirim ke queue, publish ke MQTT
  * 
  * Komponen:
- * - Potentiometer (GPIO 36)
+ * - Potentiometer (GPIO 35)
  * - LED (GPIO 2)
  * 
  * Pinout:
- * - Sensor -> GPIO 36 (ADC)
+ * - Sensor -> GPIO 35 (ADC)
  * - LED    -> GPIO 2
  */
 
@@ -26,7 +26,7 @@ const char* password = "";
 const char* mqtt_server = "broker.mqttdashboard.com";
 const int mqtt_port = 1883;
 
-const int SENSOR_PIN = 36;
+const int SENSOR_PIN = 35;
 const int LED_PIN = 2;
 
 // Queue
