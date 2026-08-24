@@ -274,3 +274,10 @@ Payload: Hello from ESP32 #1
 - [ ] Saya bisa membaca sensor SPI
 - [ ] Saya bisa menghubungkan ESP32 ke WiFi
 - [ ] Saya bisa publish/subscribe MQTT
+
+---
+
+## 🔗 Navigasi
+
+- [⬅ Kembali ke Home](../README.md)
+- [➡ Lanjut ke Communication](../03-multitasking/README.md)
