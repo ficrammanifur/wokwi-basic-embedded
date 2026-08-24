@@ -183,11 +183,11 @@ Mempelajari bagaimana meningkatkan performa dan efisiensi sistem.
 
 | No | Materi              | Pembahasan                      |   Wokwi   |
 | -: | ------------------- | ------------------------------- | :-------: |
-| 01 | CPU Usage           | Memantau penggunaan CPU         | [▶️ Open] |
-| 02 | Heap Monitoring     | Memantau penggunaan heap        | [▶️ Open] |
-| 03 | Stack Optimization  | Mengoptimalkan penggunaan stack | [▶️ Open] |
-| 04 | Memory Optimization | Mengurangi penggunaan memory    | [▶️ Open] |
-| 05 | Task Optimization   | Mengoptimalkan task             | [▶️ Open] |
+| 01 | CPU Usage           | Memantau penggunaan CPU         | [▶️ Open](https://wokwi.com/projects/473266722221728769) |
+| 02 | Heap Monitoring     | Memantau penggunaan heap        | [▶️ Open](https://wokwi.com/projects/473266975499020289) |
+| 03 | Stack Optimization  | Mengoptimalkan penggunaan stack | [▶️ Open](https://wokwi.com/projects/473267012548367361) |
+| 04 | Memory Optimization | Mengurangi penggunaan memory    | [▶️ Open](https://wokwi.com/projects/473267069198742529) |
+| 05 | Task Optimization   | Mengoptimalkan task             | [▶️ Open](https://wokwi.com/projects/473267315788203009) |
 
 ---
 
@@ -207,7 +207,7 @@ Read Sensor
 Process Data
 ```
 
-[▶️ Open Wokwi Project]
+[▶️ Open Wokwi Project](https://wokwi.com/projects/473267417780061185)
 
 ---
 
@@ -223,7 +223,7 @@ Process Data
      Process
 ```
 
-[▶️ Open Wokwi Project]
+[▶️ Open Wokwi Project](https://wokwi.com/projects/473267655089623041)
 
 ---
 
@@ -245,7 +245,7 @@ Process Data
       Broker
 ```
 
-[▶️ Open Wokwi Project]
+[▶️ Open Wokwi Project](https://wokwi.com/projects/473267784160957441)
 
 ---
 
@@ -262,7 +262,7 @@ Process Data
    WiFi Task         Control Task
 ```
 
-[▶️ Open Wokwi Project]
+[▶️ Open Wokwi Project](https://wokwi.com/projects/473267905540990977)
 
 ---
 
@@ -309,7 +309,7 @@ Gabungan:
        Hardware             Broker
 ```
 
-[▶️ Open Wokwi Project]
+[▶️ Open Wokwi Project](https://wokwi.com/projects/473268085834231809)
 
 ---
 
