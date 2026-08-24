@@ -1,10 +1,3 @@
-Saya akan menambahkan badge-badge dan daftar isi ke README utama tanpa mengubah konten yang sudah ada. Berikut adalah README.md yang sudah diperbarui:
-
----
-
-# 📘 README.md (Updated)
-
-```markdown
 # Wokwi Basic Embedded
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Demo-10b981?style=for-the-badge&logo=github)](https://ficrammanifur.github.io/wokwi-basic-embedded/)
