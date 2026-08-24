@@ -333,7 +333,6 @@ Setelah menyelesaikan semua modul, Anda akan mampu:
 
 **Author:** Ficram Manifur
 **GitHub:** [@ficrammanifur](https://github.com/ficrammanifur)
-```
 
 ---
 
