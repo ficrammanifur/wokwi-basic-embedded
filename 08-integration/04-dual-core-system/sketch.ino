@@ -4,12 +4,12 @@
  * Konsep: Menjalankan task berbeda pada core berbeda
  * 
  * Komponen:
- * - Potentiometer (GPIO 36)
+ * - Potentiometer (GPIO 35)
  * - LED1 (GPIO 2)
  * - LED2 (GPIO 4)
  * 
  * Pinout:
- * - Sensor -> GPIO 36 (ADC)
+ * - Sensor -> GPIO 35 (ADC)
  * - LED1   -> GPIO 2
  * - LED2   -> GPIO 4
  */
@@ -18,7 +18,7 @@
 #include <freertos/task.h>
 #include <freertos/queue.h>
 
-const int SENSOR_PIN = 36;
+const int SENSOR_PIN = 35;
 const int LED1_PIN = 2;
 const int LED2_PIN = 4;
 
