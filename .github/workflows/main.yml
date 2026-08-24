@@ -41,15 +41,20 @@ jobs:
       
       - name: Build static content
         run: |
-          # Create a simple index.html that redirects to README
-          echo '<!DOCTYPE html>
+          # Create a beautiful landing page (NO AUTO-REDIRECT)
+          cat > index.html << 'EOF'
+          <!DOCTYPE html>
           <html lang="en">
           <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Wokwi Basic Embedded</title>
-            <meta http-equiv="refresh" content="0; url=https://github.com/ficrammanifur/wokwi-basic-embedded">
             <style>
+              * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+              }
               body {
                 font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
                 display: flex;
@@ -59,18 +64,20 @@ jobs:
                 margin: 0;
                 background: #0d1117;
                 color: #c9d1d9;
+                padding: 20px;
               }
               .container {
                 text-align: center;
                 padding: 2rem;
-                max-width: 800px;
+                max-width: 850px;
+                width: 100%;
               }
               .logo {
                 font-size: 4rem;
-                margin-bottom: 1rem;
+                margin-bottom: 0.5rem;
               }
               h1 {
-                font-size: 2.5rem;
+                font-size: 2.8rem;
                 margin-bottom: 0.5rem;
                 background: linear-gradient(135deg, #58a6ff, #f0883e);
                 -webkit-background-clip: text;
@@ -83,24 +90,35 @@ jobs:
                 margin-bottom: 2rem;
               }
               .badges {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 0.5rem;
                 margin: 1.5rem 0;
               }
               .badges img {
-                margin: 0.2rem;
+                height: 28px;
+              }
+              .btn-group {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 0.75rem;
+                margin: 1.5rem 0;
               }
               .btn {
                 display: inline-block;
-                padding: 12px 24px;
-                margin: 0.5rem;
+                padding: 12px 28px;
                 background: #238636;
                 color: white;
                 text-decoration: none;
                 border-radius: 6px;
                 font-weight: 600;
-                transition: background 0.2s;
+                transition: all 0.2s;
               }
               .btn:hover {
                 background: #2ea043;
+                transform: scale(1.02);
               }
               .btn-secondary {
                 background: #21262d;
@@ -109,6 +127,72 @@ jobs:
               .btn-secondary:hover {
                 background: #30363d;
               }
+              .btn-outline {
+                background: transparent;
+                color: #58a6ff;
+                border: 1px solid #58a6ff;
+              }
+              .btn-outline:hover {
+                background: #1f2937;
+              }
+              .stats {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 1rem;
+                margin: 2.5rem 0;
+              }
+              .stat-card {
+                background: #161b22;
+                padding: 1.2rem;
+                border-radius: 8px;
+                border: 1px solid #30363d;
+                transition: border-color 0.2s;
+              }
+              .stat-card:hover {
+                border-color: #58a6ff;
+              }
+              .stat-number {
+                font-size: 2rem;
+                font-weight: 700;
+                color: #58a6ff;
+              }
+              .stat-label {
+                font-size: 0.8rem;
+                color: #8b949e;
+                margin-top: 0.25rem;
+              }
+              .roadmap {
+                text-align: left;
+                margin: 2.5rem 0;
+                background: #161b22;
+                padding: 1.5rem;
+                border-radius: 8px;
+                border: 1px solid #30363d;
+              }
+              .roadmap h3 {
+                color: #c9d1d9;
+                margin-bottom: 1rem;
+                font-size: 1.2rem;
+              }
+              .roadmap-item {
+                display: flex;
+                justify-content: space-between;
+                padding: 0.6rem 0;
+                border-bottom: 1px solid #21262d;
+              }
+              .roadmap-item:last-child {
+                border-bottom: none;
+              }
+              .roadmap-item .name {
+                color: #c9d1d9;
+              }
+              .roadmap-item .status {
+                font-weight: 600;
+              }
+              .status-done { color: #238636; }
+              .status-progress { color: #f0883e; }
+              .status-planned { color: #8b949e; }
+              
               .footer {
                 margin-top: 3rem;
                 color: #8b949e;
@@ -121,59 +205,23 @@ jobs:
               .footer a:hover {
                 text-decoration: underline;
               }
-              .redirect-notice {
-                margin-top: 2rem;
-                padding: 1rem;
-                background: #161b22;
-                border-radius: 6px;
-                border: 1px solid #30363d;
-                font-size: 0.9rem;
-                color: #8b949e;
-              }
-              .progress-container {
-                margin: 2rem 0;
-                background: #21262d;
-                border-radius: 6px;
-                overflow: hidden;
-                border: 1px solid #30363d;
-              }
-              .progress-bar {
-                height: 24px;
-                background: linear-gradient(90deg, #238636, #2ea043);
-                width: 70%;
+              .footer-links {
                 display: flex;
-                align-items: center;
                 justify-content: center;
-                color: white;
-                font-size: 0.8rem;
-                font-weight: 600;
+                gap: 1.5rem;
+                flex-wrap: wrap;
+                margin-top: 1rem;
               }
-              .stats {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 1rem;
-                margin: 2rem 0;
+              
+              @media (max-width: 768px) {
+                h1 { font-size: 2rem; }
+                .stats { grid-template-columns: repeat(2, 1fr); }
+                .badges img { height: 24px; }
               }
-              .stat-card {
-                background: #161b22;
-                padding: 1rem;
-                border-radius: 6px;
-                border: 1px solid #30363d;
-              }
-              .stat-number {
-                font-size: 2rem;
-                font-weight: 700;
-                color: #58a6ff;
-              }
-              .stat-label {
-                font-size: 0.8rem;
-                color: #8b949e;
-                margin-top: 0.25rem;
-              }
-              @media (max-width: 600px) {
-                h1 { font-size: 1.8rem; }
+              @media (max-width: 480px) {
+                h1 { font-size: 1.6rem; }
                 .stats { grid-template-columns: 1fr; }
-                .badges img { display: block; margin: 0.3rem auto; }
+                .btn { width: 100%; justify-content: center; }
               }
             </style>
           </head>
@@ -182,7 +230,8 @@ jobs:
               <div class="logo">⚡</div>
               <h1>Wokwi Basic Embedded</h1>
               <p class="subtitle">
-                Learning Path for ESP32 Embedded Systems<br>
+                Learning Path for ESP32 Embedded Systems
+                <br>
                 <span style="font-size: 0.9rem; color: #8b949e;">
                   From GPIO to Complete System Integration
                 </span>
@@ -196,9 +245,11 @@ jobs:
                 <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="MIT License">
               </div>
 
-              <div style="margin: 1.5rem 0;">
+              <div class="btn-group">
                 <a href="https://github.com/ficrammanifur/wokwi-basic-embedded" class="btn">📂 View on GitHub</a>
                 <a href="https://github.com/ficrammanifur/wokwi-basic-embedded/stargazers" class="btn btn-secondary">⭐ Star</a>
+                <a href="https://github.com/ficrammanifur/wokwi-basic-embedded/fork" class="btn btn-secondary">🍴 Fork</a>
+                <a href="#roadmap" class="btn btn-outline">📚 Roadmap</a>
               </div>
 
               <div class="stats">
@@ -214,70 +265,70 @@ jobs:
                   <div class="stat-number">70%</div>
                   <div class="stat-label">Progress</div>
                 </div>
-              </div>
-
-              <div style="text-align: left; margin: 1.5rem 0;">
-                <h3 style="color: #c9d1d9;">📚 Learning Roadmap</h3>
-                <div style="background: #161b22; padding: 1rem; border-radius: 6px; border: 1px solid #30363d;">
-                  <div style="display: flex; justify-content: space-between; padding: 0.3rem 0; border-bottom: 1px solid #21262d;">
-                    <span>✅ 01 Fundamental</span>
-                    <span style="color: #238636;">100%</span>
-                  </div>
-                  <div style="display: flex; justify-content: space-between; padding: 0.3rem 0; border-bottom: 1px solid #21262d;">
-                    <span>🔄 02 Communication</span>
-                    <span style="color: #f0883e;">60%</span>
-                  </div>
-                  <div style="display: flex; justify-content: space-between; padding: 0.3rem 0; border-bottom: 1px solid #21262d;">
-                    <span>📝 03 Multitasking</span>
-                    <span style="color: #8b949e;">0%</span>
-                  </div>
-                  <div style="display: flex; justify-content: space-between; padding: 0.3rem 0; border-bottom: 1px solid #21262d;">
-                    <span>📝 04 Synchronization</span>
-                    <span style="color: #8b949e;">0%</span>
-                  </div>
-                  <div style="display: flex; justify-content: space-between; padding: 0.3rem 0; border-bottom: 1px solid #21262d;">
-                    <span>📝 05 System Management</span>
-                    <span style="color: #8b949e;">0%</span>
-                  </div>
-                  <div style="display: flex; justify-content: space-between; padding: 0.3rem 0; border-bottom: 1px solid #21262d;">
-                    <span>📝 06 Program Architecture</span>
-                    <span style="color: #8b949e;">0%</span>
-                  </div>
-                  <div style="display: flex; justify-content: space-between; padding: 0.3rem 0; border-bottom: 1px solid #21262d;">
-                    <span>📝 07 Optimization</span>
-                    <span style="color: #8b949e;">0%</span>
-                  </div>
-                  <div style="display: flex; justify-content: space-between; padding: 0.3rem 0;">
-                    <span>📝 08 System Integration</span>
-                    <span style="color: #8b949e;">0%</span>
-                  </div>
+                <div class="stat-card">
+                  <div class="stat-number">⭐</div>
+                  <div class="stat-label">Star Repository</div>
                 </div>
               </div>
 
-              <div class="redirect-notice">
-                ⏳ You are being redirected to GitHub repository...
-                <br>
-                <small>If you are not redirected, <a href="https://github.com/ficrammanifur/wokwi-basic-embedded">click here</a></small>
+              <div class="roadmap" id="roadmap">
+                <h3>📚 Learning Roadmap</h3>
+                
+                <div class="roadmap-item">
+                  <span class="name">✅ 01 — Fundamental</span>
+                  <span class="status status-done">100%</span>
+                </div>
+                <div class="roadmap-item">
+                  <span class="name">🔄 02 — Communication</span>
+                  <span class="status status-progress">60%</span>
+                </div>
+                <div class="roadmap-item">
+                  <span class="name">📝 03 — Multitasking</span>
+                  <span class="status status-planned">0%</span>
+                </div>
+                <div class="roadmap-item">
+                  <span class="name">📝 04 — Synchronization</span>
+                  <span class="status status-planned">0%</span>
+                </div>
+                <div class="roadmap-item">
+                  <span class="name">📝 05 — System Management</span>
+                  <span class="status status-planned">0%</span>
+                </div>
+                <div class="roadmap-item">
+                  <span class="name">📝 06 — Program Architecture</span>
+                  <span class="status status-planned">0%</span>
+                </div>
+                <div class="roadmap-item">
+                  <span class="name">📝 07 — Optimization</span>
+                  <span class="status status-planned">0%</span>
+                </div>
+                <div class="roadmap-item">
+                  <span class="name">📝 08 — System Integration</span>
+                  <span class="status status-planned">0%</span>
+                </div>
               </div>
 
               <div class="footer">
                 <p>
-                  <strong>Author:</strong> 
-                  <a href="https://github.com/ficrammanifur">Ficram Manifur</a> &nbsp;•&nbsp;
+                  <strong>Author:</strong>
+                  <a href="https://github.com/ficrammanifur">Ficram Manifur</a>
+                  &nbsp;•&nbsp;
                   <strong>License:</strong> MIT
                 </p>
-                <p>
-                  <a href="https://github.com/ficrammanifur/wokwi-basic-embedded#readme">📖 Documentation</a> &nbsp;•&nbsp;
-                  <a href="https://github.com/ficrammanifur/wokwi-basic-embedded/issues">🐛 Report Issue</a> &nbsp;•&nbsp;
+                <div class="footer-links">
+                  <a href="https://github.com/ficrammanifur/wokwi-basic-embedded#readme">📖 Documentation</a>
+                  <a href="https://github.com/ficrammanifur/wokwi-basic-embedded/issues">🐛 Report Issue</a>
                   <a href="https://github.com/ficrammanifur/wokwi-basic-embedded#-kontribusi">🤝 Contribute</a>
-                </p>
-                <p style="margin-top: 1rem; font-size: 0.8rem; color: #484f58;">
+                  <a href="https://wokwi.com/">🔧 Wokwi Simulator</a>
+                </div>
+                <p style="margin-top: 1.5rem; font-size: 0.8rem; color: #484f58;">
                   Built with ❤️ using ESP32 &amp; Wokwi Simulator
                 </p>
               </div>
             </div>
           </body>
-          </html>' > index.html
+          </html>
+          EOF
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
