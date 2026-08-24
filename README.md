@@ -169,11 +169,11 @@ Mempelajari cara membuat program embedded yang lebih terstruktur dan mudah dikem
 
 | No | Materi                   | Pembahasan                          |   Wokwi   |
 | -: | ------------------------ | ----------------------------------- | :-------: |
-| 01 | State Machine            | Mengatur alur berdasarkan state     | [▶️ Open] |
-| 02 | Modular Programming      | Memisahkan program menjadi modul    | [▶️ Open] |
-| 03 | Event-Driven Programming | Program berdasarkan event           | [▶️ Open] |
-| 04 | Error Handling           | Menangani kondisi error             | [▶️ Open] |
-| 05 | Configuration Management | Memisahkan konfigurasi dari program | [▶️ Open] |
+| 01 | State Machine            | Mengatur alur berdasarkan state     | [▶️ Open](https://wokwi.com/projects/473264301328734209) |
+| 02 | Modular Programming      | Memisahkan program menjadi modul    | [▶️ Open](https://wokwi.com/projects/473264507334123521) |
+| 03 | Event-Driven Programming | Program berdasarkan event           | [▶️ Open](https://wokwi.com/projects/473265821621620737) |
+| 04 | Error Handling           | Menangani kondisi error             | [▶️ Open](https://wokwi.com/projects/473265903347647489) |
+| 05 | Configuration Management | Memisahkan konfigurasi dari program | [▶️ Open](https://wokwi.com/projects/473266146644596737) |
 
 ---
 
