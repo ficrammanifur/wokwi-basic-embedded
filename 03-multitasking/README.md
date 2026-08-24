@@ -315,3 +315,10 @@ xTaskCreatePinnedToCore(
 - [ ] Saya bisa mengatur prioritas task
 - [ ] Saya bisa menjalankan task di dual core
 - [ ] Saya bisa mengatur task affinity
+
+---
+
+## 🔗 Navigasi
+
+- [⬅ Kembali ke Home](../README.md)
+- [➡ Lanjut ke Synchronization](../04-synchronization/README.md)
