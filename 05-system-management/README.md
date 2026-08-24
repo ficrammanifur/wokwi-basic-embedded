@@ -269,3 +269,10 @@ Largest Free Block: 280 KB
 - [ ] Saya bisa melakukan OTA update
 - [ ] Saya bisa memonitor memory usage
 - [ ] Saya bisa memonitor stack usage
+
+---
+
+## 🔗 Navigasi
+
+- [⬅ Kembali ke Home](../README.md)
+- [➡ Lanjut ke Program Architecture](../06-program-architecture/README.md)
