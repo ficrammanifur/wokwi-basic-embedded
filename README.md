@@ -462,7 +462,7 @@ hingga mampu membangun sistem embedded/IoT yang **terstruktur, reliable, dan sca
   <a href="https://github.com/ficrammanifur">
     <img src="https://img.shields.io/badge/GitHub-@ficrammanifur-181717?style=for-the-badge&logo=github" alt="GitHub">
   </a>
-  <a href="https://linkedin.com/in/ficrammanifur">
+  <a href="https://www.linkedin.com/in/ficram-manifur-farissa-418280376">
     <img src="https://img.shields.io/badge/LinkedIn-Ficram%20Manifur-0A66C2?style=for-the-badge&logo=linkedin" alt="LinkedIn">
   </a>
   <a href="mailto:ficramm@gmail.com">
