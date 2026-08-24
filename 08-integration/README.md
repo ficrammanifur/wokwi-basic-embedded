@@ -339,7 +339,7 @@ Setelah menyelesaikan semua modul, Anda akan mampu:
 
 # 📁 Struktur Folder Lengkap
 
-```
+```text
 wokwi-basic-embedded/
 │
 ├── 01-fundamental/
