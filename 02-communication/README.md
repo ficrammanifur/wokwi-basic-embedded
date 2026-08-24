@@ -280,4 +280,4 @@ Payload: Hello from ESP32 #1
 ## 🔗 Navigasi
 
 - [⬅ Kembali ke Home](../README.md)
-- [➡ Lanjut ke Communication](../03-multitasking/README.md)
+- [➡ Lanjut ke Multitasking](../03-multitasking/README.md)
