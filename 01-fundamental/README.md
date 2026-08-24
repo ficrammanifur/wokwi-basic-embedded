@@ -316,3 +316,10 @@ if (currentMillis - lastLED2Toggle >= LED2_INTERVAL) {
 - [ ] Saya bisa menggunakan interrupt untuk merespons event
 - [ ] Saya bisa menggunakan timer untuk tugas periodik
 - [ ] Saya bisa membuat program non-blocking dengan millis()
+
+---
+
+## 🔗 Navigasi
+
+- [⬅ Kembali ke Home](../README.md)
+- [➡ Lanjut ke Communication](../02-communication/README.md)
