@@ -292,3 +292,10 @@ Receiver: LED ON
 - [ ] Saya bisa mengamankan resource dengan mutex
 - [ ] Saya bisa menggunakan event group
 - [ ] Saya bisa menggunakan task notification
+
+---
+
+## 🔗 Navigasi
+
+- [⬅ Kembali ke Home](../README.md)
+- [➡ Lanjut ke System Management](../05-system-management/README.md)
