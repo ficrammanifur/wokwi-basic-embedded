@@ -31,6 +31,7 @@ public:
   }
 };
 
+// Static member definitions
 int LedModule::pin = 0;
 bool LedModule::state = false;
 
