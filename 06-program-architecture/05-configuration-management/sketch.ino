@@ -15,7 +15,7 @@
 #include "Config.h"
 #include "LoggerModule.h"
 #include "LedModule.h"
-#include "ButtonModule.h"
+#include "ButtonModule.h"  // ← PASTIKAN INI ADA!
 #include "SystemManager.h"
 
 void setup() {
@@ -28,7 +28,7 @@ void setup() {
   
   // Initialize hardware
   LedModule::init(Config::LED_PIN);
-  ButtonModule::init(Config::BUTTON_PIN);
+  ButtonModule::init(Config::BUTTON_PIN);  // ← PASTIKAN INI!
   
   // Initialize system manager
   SystemManager::init();
@@ -38,7 +38,7 @@ void setup() {
 
 void loop() {
   // Update modules
-  ButtonModule::update();
+  ButtonModule::update();  // ← PASTIKAN INI!
   SystemManager::update();
   LedModule::update();
   
