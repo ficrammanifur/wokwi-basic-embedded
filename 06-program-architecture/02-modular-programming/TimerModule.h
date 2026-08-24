@@ -54,6 +54,7 @@ public:
   }
 };
 
+// Static member definitions
 TimerModule::Timer TimerModule::timers[MAX_TIMERS];
 int TimerModule::timerCount = 0;
 
