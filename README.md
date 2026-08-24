@@ -112,11 +112,11 @@ Mempelajari cara ESP32 berkomunikasi dengan perangkat lain maupun jaringan.
 
 | No | Materi        | Pembahasan                                |   Wokwi   |
 | -: | ------------- | ----------------------------------------- | :-------: |
-| 01 | UART / Serial | Komunikasi serial                         | [▶️ Open] |
-| 02 | I2C           | Komunikasi dua kabel                      | [▶️ Open] |
-| 03 | SPI           | Komunikasi berkecepatan tinggi            | [▶️ Open] |
-| 04 | WiFi          | Koneksi ESP32 ke jaringan                 | [▶️ Open] |
-| 05 | MQTT          | Komunikasi IoT berbasis publish/subscribe | [▶️ Open] |
+| 01 | UART / Serial | Komunikasi serial                         | [▶️ Open](https://wokwi.com/projects/473245568742842369) |
+| 02 | I2C           | Komunikasi dua kabel                      | [▶️ Open](https://wokwi.com/projects/473258801882043393) |
+| 03 | SPI           | Komunikasi berkecepatan tinggi            | [▶️ Open](https://wokwi.com/projects/473258960371197953) |
+| 04 | WiFi          | Koneksi ESP32 ke jaringan                 | [▶️ Open](https://wokwi.com/projects/473260149265807361) |
+| 05 | MQTT          | Komunikasi IoT berbasis publish/subscribe | [▶️ Open](https://wokwi.com/projects/473260296273045505) |
 
 ---
 
