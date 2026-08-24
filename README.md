@@ -36,12 +36,12 @@ Konsep dasar yang menjadi fondasi pemrograman ESP32.
 
 | No | Materi                   | Pembahasan                           |   Wokwi   |
 | -: | ------------------------ | ------------------------------------ | :-------: |
-| 01 | GPIO                     | Digital Input & Output               | [▶️ Open] |
-| 02 | ADC                      | Membaca sinyal analog                | [▶️ Open] |
-| 03 | PWM                      | Mengatur duty cycle                  | [▶️ Open] |
-| 04 | Interrupt                | Merespons event secara langsung      | [▶️ Open] |
-| 05 | Timer                    | Menjalankan proses berdasarkan waktu | [▶️ Open] |
-| 06 | Non-Blocking Programming | `millis()` tanpa `delay()`           | [▶️ Open] |
+| 01 | GPIO                     | Digital Input & Output               | [▶️ Open](https://wokwi.com/projects/473243606471710721) |
+| 02 | ADC                      | Membaca sinyal analog                | [▶️ Open](https://wokwi.com/projects/473241427551174657) |
+| 03 | PWM                      | Mengatur duty cycle                  | [▶️ Open](https://wokwi.com/projects/448772289285109761) |
+| 04 | Interrupt                | Merespons event secara langsung      | [▶️ Open](https://wokwi.com/projects/473244403344647169) |
+| 05 | Timer                    | Menjalankan proses berdasarkan waktu | [▶️ Open](https://wokwi.com/projects/473240844295318529) |
+| 06 | Non-Blocking Programming | `millis()` tanpa `delay()`           | [▶️ Open](https://wokwi.com/projects/473245265387627521) |
 
 ---
 
