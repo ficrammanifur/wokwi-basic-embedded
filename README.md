@@ -1,16 +1,40 @@
-# Wokwi Basic Embedded
+<h1 align="center">Wokwi Basic Embedded</h1>
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Demo-10b981?style=for-the-badge&logo=github)](https://ficrammanifur.github.io/wokwi-basic-embedded/)
-[![ESP32](https://img.shields.io/badge/ESP32-000000?style=for-the-badge&logo=espressif&logoColor=white)](https://www.espressif.com/en/products/socs/esp32)
-[![Arduino](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)](https://www.arduino.cc/)
-[![FreeRTOS](https://img.shields.io/badge/FreeRTOS-000000?style=for-the-badge&logo=freertos&logoColor=white)](https://www.freertos.org/)
-[![MQTT](https://img.shields.io/badge/HiveMQ%20MQTT-Ready%20WSS-059669?style=for-the-badge&logo=hivemq)](https://www.hivemq.com/)
-[![Wokwi](https://img.shields.io/badge/Wokwi-Simulator-FF6C37?style=for-the-badge&logo=wokwi&logoColor=white)](https://wokwi.com/)
-[![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)](https://isocpp.org/)
-[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/ficrammanifur/wokwi-basic-embedded?style=for-the-badge&logo=github)](https://github.com/ficrammanifur/wokwi-basic-embedded/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/ficrammanifur/wokwi-basic-embedded?style=for-the-badge&logo=github)](https://github.com/ficrammanifur/wokwi-basic-embedded/network/members)
-[![GitHub Issues](https://img.shields.io/github/issues/ficrammanifur/wokwi-basic-embedded?style=for-the-badge&logo=github)](https://github.com/ficrammanifur/wokwi-basic-embedded/issues)
+<p align="center">
+  <a href="https://ficrammanifur.github.io/wokwi-basic-embedded/">
+    <img src="https://img.shields.io/badge/GitHub%20Pages-Live%20Demo-10b981?style=for-the-badge&logo=github" alt="GitHub Pages">
+  </a>
+  <a href="https://www.espressif.com/en/products/socs/esp32">
+    <img src="https://img.shields.io/badge/ESP32-000000?style=for-the-badge&logo=espressif&logoColor=white" alt="ESP32">
+  </a>
+  <a href="https://www.arduino.cc/">
+    <img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white" alt="Arduino">
+  </a>
+  <a href="https://www.freertos.org/">
+    <img src="https://img.shields.io/badge/FreeRTOS-000000?style=for-the-badge&logo=freertos&logoColor=white" alt="FreeRTOS">
+  </a>
+  <a href="https://www.hivemq.com/">
+    <img src="https://img.shields.io/badge/HiveMQ%20MQTT-Ready%20WSS-059669?style=for-the-badge&logo=hivemq" alt="MQTT">
+  </a>
+  <a href="https://wokwi.com/">
+    <img src="https://img.shields.io/badge/Wokwi-Simulator-FF6C37?style=for-the-badge&logo=wokwi&logoColor=white" alt="Wokwi">
+  </a>
+  <a href="https://isocpp.org/">
+    <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++">
+  </a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="License">
+  </a>
+  <a href="https://github.com/ficrammanifur/wokwi-basic-embedded/stargazers">
+    <img src="https://img.shields.io/github/stars/ficrammanifur/wokwi-basic-embedded?style=for-the-badge&logo=github" alt="GitHub Stars">
+  </a>
+  <a href="https://github.com/ficrammanifur/wokwi-basic-embedded/network/members">
+    <img src="https://img.shields.io/github/forks/ficrammanifur/wokwi-basic-embedded?style=for-the-badge&logo=github" alt="GitHub Forks">
+  </a>
+  <a href="https://github.com/ficrammanifur/wokwi-basic-embedded/issues">
+    <img src="https://img.shields.io/github/issues/ficrammanifur/wokwi-basic-embedded?style=for-the-badge&logo=github" alt="GitHub Issues">
+  </a>
+</p>
 
 Kumpulan pembelajaran **Embedded System menggunakan ESP32** yang dibuat secara bertahap dari konsep dasar hingga integrasi beberapa fitur.
 
