@@ -454,14 +454,26 @@ hingga mampu membangun sistem embedded/IoT yang **terstruktur, reliable, dan sca
 
 ## 👨‍💻 Author
 
-**Ficram Manifur**
+<p align="center">
+  <strong>Ficram Manifur</strong>
+</p>
 
-[![GitHub](https://img.shields.io/badge/GitHub-@ficrammanifur-181717?style=for-the-badge&logo=github)](https://github.com/ficrammanifur)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ficram%20Manifur-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/ficrammanifur)
-[![Email](https://img.shields.io/badge/Email-ficramm@gmail.com-EA4335?style=for-the-badge&logo=gmail)](mailto:ficramm@gmail.com)
+<p align="center">
+  <a href="https://github.com/ficrammanifur">
+    <img src="https://img.shields.io/badge/GitHub-@ficrammanifur-181717?style=for-the-badge&logo=github" alt="GitHub">
+  </a>
+  <a href="https://linkedin.com/in/ficrammanifur">
+    <img src="https://img.shields.io/badge/LinkedIn-Ficram%20Manifur-0A66C2?style=for-the-badge&logo=linkedin" alt="LinkedIn">
+  </a>
+  <a href="mailto:ficramm@gmail.com">
+    <img src="https://img.shields.io/badge/Email-ficramm@gmail.com-EA4335?style=for-the-badge&logo=gmail" alt="Email">
+  </a>
+</p>
 
-Electrical Engineering  
-Embedded System • IoT • Robotics • AI
+<p align="center">
+  Electrical Engineering<br>
+  Embedded System • IoT • Robotics • AI
+</p>
 
 ---
 
