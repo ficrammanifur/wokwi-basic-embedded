@@ -282,3 +282,10 @@ Error Count: 1
 - [ ] Saya bisa membuat event-driven program
 - [ ] Saya bisa menangani error dengan baik
 - [ ] Saya bisa mengelola konfigurasi
+
+---
+
+## 🔗 Navigasi
+
+- [⬅ Kembali ke Home](../README.md)
+- [➡ Lanjut ke Optimization](../07-optimization/README.md)
