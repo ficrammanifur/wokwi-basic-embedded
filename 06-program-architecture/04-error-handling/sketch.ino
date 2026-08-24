@@ -13,6 +13,7 @@
  */
 
 #include <exception>
+#include <stdexcept>  // ← INI YANG DITAMBAHKAN!
 
 const int LED_PIN = 2;
 const int BUTTON_PIN = 4;
